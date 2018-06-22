@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import {Grid, Row, Col, Image} from 'react-bootstrap';
+import pisa from '../img/italy2018/DSC_0361.JPG';
+import Photo from './Photo';
 import './Photos.css';
 
 export default class Photos extends Component {
@@ -12,8 +15,8 @@ export default class Photos extends Component {
 	      <Grid>
 		<Row>
 		  <Col>
-		    <Image src="../logo.svg" rounded />
-		  </Col>
+		<Link to="/photos/italy2018"><Image src={pisa} thumbnail /></Link>
+		</Col>
 		</Row>
 	      </Grid>
 	    </div>
